@@ -13,7 +13,7 @@ contains all data representating a single match between two teams
 
 #### TableManager
 Takes a 3-dimensional List representing:
-- inner list --> one Matchday
+- inner list --> a Matchday containing multiple Matches
 - middle list --> season as a list of a list of Matchdays
 - outer list --> multiple seasons
 
