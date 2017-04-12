@@ -5,11 +5,17 @@ package com.github.brauchle.football.beans;
  */
 public abstract class AbstractMatchBean {
     abstract public String getSaison();
-    abstract public String getErgebnis();
-    abstract public String getHeimName();
-    abstract public String getGastName();
-    abstract public Integer getToreHeim();
-    abstract public Integer getToreGast();
+
+    abstract public MATCH_RESULT_ENUM getResult();
+
+    abstract public String getTeamNameHome();
+
+    abstract public String getTeamNameAway();
+
+    abstract public Integer getGoalsShotHome();
+
+    abstract public Integer getGoalsShotAway();
+
     abstract public TableDataBean getTableDataHome();
     abstract public TableDataBean getTableDataAway();
 }

@@ -31,15 +31,15 @@ public class FormTableManager {
                     if (currentSeason == null) {
                         currentSeason = matchBean.getSaison();
                     }
-                    if (matchBean.getErgebnis() != null) {
+                    if (matchBean.getResult() != null) {
                         for (Table table : tables) {
                             table.addEntry(matchBean, null);
                         }
                     }
 
                     if (lastTable != null) {
-                        setLastPostion(lastTable, matchBean.getHeimName(), matchBean.getTableDataHome());
-                        setLastPostion(lastTable, matchBean.getGastName(), matchBean.getTableDataAway());
+                        setLastPostion(lastTable, matchBean.getTeamNameHome(), matchBean.getTableDataHome());
+                        setLastPostion(lastTable, matchBean.getTeamNameAway(), matchBean.getTableDataAway());
                     }
                 }
                 lastTable = tables[0].createTable(currentSeason);

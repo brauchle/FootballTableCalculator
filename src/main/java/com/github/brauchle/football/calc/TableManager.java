@@ -20,12 +20,12 @@ public class TableManager {
         for (List<? extends List<? extends AbstractMatchBean>> saison : all) {
             for (List<? extends AbstractMatchBean> matchday : saison) {
                 for (AbstractMatchBean matchBean : matchday) {
-                    if (matchBean.getErgebnis() != null) {
+                    if (matchBean.getResult() != null) {
                         table.addEntry(matchBean, null);
                     }
                     if (lastTable != null) {
-                        setLastPostion(lastTable, lastSeasonTable, matchBean.getHeimName(), matchBean.getTableDataHome());
-                        setLastPostion(lastTable, lastSeasonTable, matchBean.getGastName(), matchBean.getTableDataAway());
+                        setLastPostion(lastTable, lastSeasonTable, matchBean.getTeamNameHome(), matchBean.getTableDataHome());
+                        setLastPostion(lastTable, lastSeasonTable, matchBean.getTeamNameAway(), matchBean.getTableDataAway());
                     }
                 }
 
