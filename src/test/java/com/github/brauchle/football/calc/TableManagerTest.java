@@ -9,6 +9,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 /**
  * Created by andreasbrauchle on 26.02.17.
  */
@@ -34,6 +37,21 @@ public class TableManagerTest {
         for (TableEntry tableEntry : table) {
             System.out.println(tableEntry.toString());
         }
+
+        assertNotNull(table);
+        assertEquals(table.size(), 4);
+
+        assertEquals(table.get(0).getTeam(), "Team4");
+        assertEquals(table.get(0).getCurrentPosition(), 1);
+
+        assertEquals(table.get(1).getTeam(), "Team1");
+        assertEquals(table.get(1).getCurrentPosition(), 2);
+
+        assertEquals(table.get(2).getTeam(), "Team3");
+        assertEquals(table.get(2).getCurrentPosition(), 3);
+
+        assertEquals(table.get(3).getTeam(), "Team2");
+        assertEquals(table.get(3).getCurrentPosition(), 4);
     }
 
     private List<List<List<SimpleMatchBean>>> generateDemoData() {

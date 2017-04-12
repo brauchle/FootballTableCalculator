@@ -1,7 +1,3 @@
-### FootballTableCalculator
-
-Calculates Football / Soccer tables.
-
 ### Usage:
 #### SimpleMatchBean
 contains all data representating a single match between two teams
