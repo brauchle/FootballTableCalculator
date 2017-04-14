@@ -47,7 +47,7 @@ repositories {
 
 [...]
 
-compile 'com.github.brauchle:FootballTableCalculator'
+compile 'com.github.brauchle:FootballTableCalculator:1.0.0'
 ```
 
 ### License
